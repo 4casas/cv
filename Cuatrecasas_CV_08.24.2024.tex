@@ -32,6 +32,8 @@
 \newenvironment{gnoindent}
 {\begin{adjustwidth}{10pt}{50pt}\setlength{\parindent}{0pt}}
 {\end{adjustwidth}}
+\usepackage{setspace}
+\newenvironment{unclutter}{\begin{spacing}{1.3}}{\end{spacing}}
 
 % right-side years formatting
 \newcommand{\years}[1]{\marginnote{\scriptsize #1}}
@@ -39,10 +41,8 @@
 
 % list formatting
 \usepackage{enumitem}
-\setlength{\columnsep}{0pt}
 \usepackage{multicol}
-\setlength\columnsep{0.2pt}
-\setlength{\parindent}{10pt}
+\setlength\columnsep{0.15pt}
 \usepackage{mathabx}
 \renewcommand{\labelitemi}{\footnotesize{$\sqbullet$}}
 
@@ -60,14 +60,17 @@
 \section*{Academic Appointments}
 
 \years{2024—}
-\textbf{New York University School of Law} \par Furman Fellow
+\begin{unclutter}
+\textbf{New York University School of Law} \end{unclutter} \par
+Furman Fellow
+
 
 \section*{Education}
 
 \years{2021}
 \textbf{New York University School of Law} | J.D.
 \smallskip
-\begin{itemize}
+\begin{itemize}[itemsep = 0.25pt]
 \item \textit{Magna cum laude}, Order of the Coif
 \item Furman Academic Scholar
 \item Institute for International Law \& Justice Joyce Lowinson Scholar
@@ -84,7 +87,7 @@
 \textbf{Harvard College, Harvard University} | A.B., Romance Languages and Literatures \par
 Secondary field: Linguistics (language and linguistic theory)
 \smallskip
-\begin{itemize}
+\begin{itemize}[itemsep = 0.25pt]
 \item \textit{Summa cum laude}
 \item One of 24 students in 2018 class elected to Phi Beta Kappa during their junior year
 \item Thesis: \textit{The Eternal City of the Mind: Juan José Saer as a Case Study in Modern Architecture}
@@ -97,31 +100,36 @@ Secondary field: Linguistics (language and linguistic theory)
 \item Several travel grants for research and study abroad, including to study Swedish at Uppsala University Summer Program
 \end{itemize}
 
-\newpage \pagenumbering{arabic} \setcounter{page}{2}
-
 \section*{Legal and NGO Experience}
 
 \years{2021—2024, \par Summer 2020}
+\begin{unclutter}
 \textbf{Covington \& Burling LLP}, New York \par
 Associate, mergers \& acquisitions and copyright/trademark practice groups \par
 Summer Associate (2020) \par
-\medskip
+\end{unclutter}
+\newpage \pagenumbering{arabic} \setcounter{page}{2}
 \years{Summer 2019}
+\begin{unclutter}
 \textbf{Davis+Gilbert LLP}, New York \par
 Summer Associate \par
+\end{unclutter}
 \medskip
 \years{Summer 2018}
+\begin{unclutter}
 \textbf{Trinity Church Wall Street}, New York \par
 Legal Intern \par
+\end{unclutter}
 \medskip
 \years{Summer 2017}
+\begin{unclutter}
 \textbf{Religions for Peace International Secretariat}, New York \par
-(UN-accredited NGO) \par
+(UN-accredited NGO) \end{unclutter} \par
 Communications Intern
 
 \section*{Research Interests}
 
-\begin{itemize}
+\begin{itemize}[itemsep = 0.25pt]
 \item Intellectual property law
 \item Corporate law
 \item International and comparative law
@@ -186,17 +194,17 @@ Communications Intern
 \begin{multicols}{2}
 \begin{itemize}
 \item[] \textit{Coding}:
-\begin{itemize}[itemsep = 0.75pt]
+\begin{itemize}[itemsep = 5pt]
 \footnotesize{
 \item[–] Python
 \item[–] R
 \item[–] HTML/CSS
-\item[–] My \LaTeX~code for this CV substantially modifies \href{https://www.latextemplates.com/template/compact-academic-cv}{this code} licensed (\href{https://creativecommons.org/licenses/by-nc-sa/3.0/}{CC BY-NC-SA 3.0}) by LaTeX Templates.}
+\item[–] My \href{https://github.com/nycdna/cv}{\LaTeX~code} for this CV builds on/modifies \href{https://github.com/dartar/cvtex/}{this code} by Dario Taraborelli (licensed under a \href{https://creativecommons.org/licenses/by-sa/3.0/}{CC BY-SA 3.0} license via \href{https://www.latextemplates.com/template/compact-academic-cv}{Latex Templates}).}
 \end{itemize}
 \columnbreak
 \item[] \textit{Natural}:
 \begin{multicols}{2}
-\begin{itemize}[itemsep = 0.75pt]
+\begin{itemize}[itemsep = 5pt]
 \footnotesize{
 \item[] Native:
 \item[] Near-native:
